@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Ayra — Curadoria de produtos e serviços com respeito e elegância</title>
+  <meta name="description" content="Ayra é o marketplace com curadoria especial de produtos, serviços, assinaturas e conteúdos selecionados com respeito e elegância." />
+  <meta name="theme-color" content="#1E3D2F" />
+
+  <!-- Favicons -->
+  <link rel="icon" href="images/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png" />
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Ayra — Curadoria de produtos e serviços" />
+  <meta property="og:description" content="Produtos, serviços, assinaturas e conteúdos selecionados com respeito e elegância." />
+  <meta property="og:type" content="website" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+
+  <!-- ================= BARRA DE CONTATO ================= -->
+  <div class="topbar">
+    <div class="container topbar__in">
+      <a href="tel:+5521999230233">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.1-8.7A2 2 0 0 1 4 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.4-1.1a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.7.7A2 2 0 0 1 22 16.9z"/></svg>
+        (21) 99923-0233
+      </a>
+      <a href="mailto:contato@ayra.app.br">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg>
+        contato@ayra.app.br
+      </a>
+    </div>
+  </div>
+
+  <!-- ================= HEADER ================= -->
+  <header class="header">
+    <div class="container header__bar">
+      <a class="brand" href="#topo" aria-label="Ayra — página inicial">
+        <img src="images/logo-ayra.png" alt="Ayra" />
+      </a>
+
+      <nav class="nav" aria-label="Menu principal">
+        <a href="produtos.html">Produtos</a>
+        <a href="servicos.html">Serviços</a>
+        <a href="#assinaturas">Assinaturas</a>
+        <a href="#blog">Blog</a>
+        <a href="#contato">Contato</a>
+      </nav>
+
+      <div class="header__actions">
+        <button class="icon-btn" aria-label="Buscar">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+        </button>
+        <button class="icon-btn" id="openFav" aria-label="Favoritos">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 1 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8z"/></svg>
+          <span class="badge" id="favBadge" hidden>0</span>
+        </button>
+        <button class="icon-btn" id="openCart" aria-label="Carrinho">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.7 13.4a2 2 0 0 0 2 1.6h9.7a2 2 0 0 0 2-1.6L23 6H6"/></svg>
+          <span class="badge" id="cartBadge" hidden>0</span>
+        </button>
+
+        <div class="a11y" role="group" aria-label="Acessibilidade">
+          <button id="fontMinus" aria-label="Diminuir tamanho do texto">A−</button>
+          <button id="fontPlus" aria-label="Aumentar tamanho do texto">A+</button>
+          <button id="contrast" aria-label="Ativar alto contraste" title="Alto contraste">◐</button>
+        </div>
+
+        <button class="icon-btn hamburger" id="openMenu" aria-label="Abrir menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= HERO ================= -->
+  <main id="conteudo">
+  <section class="hero" id="topo" aria-roledescription="carrossel" aria-label="Destaques Ayra">
+    <div class="hero__track" id="heroTrack">
+
+      <!-- Slide 1 — marca -->
+      <div class="slide" aria-roledescription="slide">
+        <div class="slide__img"><img src="images/hero-couple.webp" alt="Casal desfrutando de um momento tranquilo em casa" /></div>
+        <div class="slide__shade"></div>
+        <div class="container"><div class="slide__content">
+          <h1>Curadoria de produtos e serviços com <span class="accent">respeito e elegância.</span></h1>
+          <p>Selecionamos com cuidado produtos, serviços, assinaturas e conteúdos que elevam o bem-estar, a praticidade e os melhores momentos de quem valoriza qualidade e propósito.</p>
+          <div class="hero__cta">
+            <a class="btn btn--sand" href="#pilares">Conheça as categorias</a>
+            <a class="btn btn--ghost" href="#institucional">Conheça a Ayra</a>
+          </div>
+        </div></div>
+      </div>
+
+      <!-- Slide 2 — Produtos -->
+      <div class="slide" aria-roledescription="slide">
+        <div class="slide__img"><img src="images/produto-farmacia.webp" alt="Produtos de cuidado e higiene selecionados" loading="lazy" /></div>
+        <div class="slide__shade"></div>
+        <div class="container"><div class="slide__content">
+          <p class="eyebrow">Produtos</p>
+          <h2 class="hero-title">Farmácia, cuidados e <span class="accent">essenciais do dia.</span></h2>
+          <p>Cuidados diários com qualidade e praticidade, escolhidos a dedo e entregues com atenção.</p>
+          <div class="hero__cta"><a class="btn btn--sand" href="#produtos">Ver produtos</a></div>
+        </div></div>
+      </div>
+
+      <!-- Slide 3 — Serviços -->
+      <div class="slide" aria-roledescription="slide">
+        <div class="slide__img"><img src="images/servico-concierge.webp" alt="Atendimento de concierge com atenção pessoal" loading="lazy" /></div>
+        <div class="slide__shade"></div>
+        <div class="container"><div class="slide__content">
+          <p class="eyebrow">Serviços</p>
+          <h2 class="hero-title">Cada detalhe da rotina, <span class="accent">com cuidado.</span></h2>
+          <p>Motorista particular, bem-estar e concierge para você aproveitar o que realmente importa.</p>
+          <div class="hero__cta"><a class="btn btn--sand" href="#servicos">Ver serviços</a></div>
+        </div></div>
+      </div>
+
+      <!-- Slide 4 — Assinaturas -->
+      <div class="slide" aria-roledescription="slide">
+        <div class="slide__img"><img src="images/assinatura-flores.webp" alt="Arranjo de flores para a casa" loading="lazy" /></div>
+        <div class="slide__shade"></div>
+        <div class="container"><div class="slide__content">
+          <p class="eyebrow">Assinaturas</p>
+          <h2 class="hero-title">O que encanta, <span class="accent">todo mês na sua porta.</span></h2>
+          <p>Café da tarde, flores em casa e feira fresca — a recorrência que traz leveza ao dia a dia.</p>
+          <div class="hero__cta"><a class="btn btn--sand" href="#assinaturas">Ver assinaturas</a></div>
+        </div></div>
+      </div>
+
+      <!-- Slide 5 — Conteúdo -->
+      <div class="slide" aria-roledescription="slide">
+        <div class="slide__img"><img src="images/conteudo-santos.webp" alt="Momento de leitura e lazer" loading="lazy" /></div>
+        <div class="slide__shade"></div>
+        <div class="container"><div class="slide__content">
+          <p class="eyebrow">Conteúdo &amp; cultura</p>
+          <h2 class="hero-title">Inspiração para <span class="accent">viver mais e melhor.</span></h2>
+          <p>Dicas culturais, teatro, cinema e entretenimento selecionados para os seus melhores momentos.</p>
+          <div class="hero__cta"><a class="btn btn--sand" href="#conteudo">Explorar conteúdo</a></div>
+        </div></div>
+      </div>
+
+    </div>
+
+    <button class="hero__nav prev" id="heroPrev" aria-label="Slide anterior">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+    </button>
+    <button class="hero__nav next" id="heroNext" aria-label="Próximo slide">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+    </button>
+    <div class="hero__dots" id="heroDots" role="tablist" aria-label="Selecionar slide"></div>
+  </section>
+
+  <!-- ================= FAIXA DE CONFIANÇA ================= -->
+  <section class="trust" id="institucional">
+    <div class="container">
+      <div class="trust__grid">
+        <div class="trust__item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 14l3-3 3 3 5-6"/></svg>
+          <div><h3>Escolhas recorrentes</h3><p>Produtos e serviços selecionados para facilitar sua rotina com qualidade.</p></div>
+        </div>
+        <div class="trust__item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 5v6c0 5 3.4 8.5 8 11 4.6-2.5 8-6 8-11V5l-8-3z"/><path d="m9 12 2 2 4-4"/></svg>
+          <div><h3>Curadoria e confiança</h3><p>Selecionamos cada parceiro e conteúdo com rigor e carinho.</p></div>
+        </div>
+        <div class="trust__item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          <div><h3>Relacionamento próximo</h3><p>Atendimento humano e atencioso sempre que você precisar.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 4 GRANDES QUADRADOS ================= -->
+  <section class="section" id="pilares">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Explore a Ayra</p>
+          <h2 class="section-title">Tudo o que importa, reunido<br/>com cuidado.</h2>
+        </div>
+      </div>
+      <div class="pillars">
+        <a class="pillar" href="produtos.html">
+          <img src="images/produto-farmacia.webp" alt="Produtos de cuidado e higiene dispostos com elegância" />
+          <div class="pillar__body">
+            <h3>Produtos</h3>
+            <p>Farmácia, cuidados e essenciais do dia a dia.</p>
+            <span class="pillar__more">Ver produtos <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </div>
+        </a>
+        <a class="pillar" href="servicos.html">
+          <img src="images/servico-concierge.webp" alt="Atendimento de concierge com atenção pessoal" />
+          <div class="pillar__body">
+            <h3>Serviços</h3>
+            <p>Motorista, bem-estar e concierge para facilitar sua vida.</p>
+            <span class="pillar__more">Ver serviços <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </div>
+        </a>
+        <a class="pillar" href="#assinaturas">
+          <img src="images/assinatura-cafe.webp" alt="Presente com café, pães e flores" />
+          <div class="pillar__body">
+            <h3>Assinaturas</h3>
+            <p>Café da tarde, flores e feira fresca na sua porta.</p>
+            <span class="pillar__more">Ver assinaturas <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </div>
+        </a>
+        <a class="pillar" href="#blog">
+          <img src="images/conteudo-santos.webp" alt="Momento de leitura e lazer" />
+          <div class="pillar__body">
+            <h3>Conteúdo &amp; cultura</h3>
+            <p>Dicas culturais, teatro, cinema e entretenimento.</p>
+            <span class="pillar__more">Explorar <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PRODUTOS ================= -->
+  <section class="section section--cream" id="produtos">
+    <div class="container">
+      <div class="section-head">
+        <div><p class="eyebrow">Selecionados para você</p><h2 class="section-title">Produtos em destaque</h2></div>
+        <a class="link-all" href="produtos.html">Ver todos</a>
+      </div>
+      <div class="cards">
+        <article class="card">
+          <div class="card__img"><img src="images/produto-farmacia.webp" alt="Produtos de farmácia e higiene" loading="lazy" /></div>
+          <div class="card__body">
+            <h3>Farmácia e produtos de higiene</h3>
+            <p>Cuidados diários com qualidade e praticidade, entregues com atenção.</p>
+            <div class="card__foot">
+              <span class="price">R$ 89 <small>/ seleção</small></span>
+              <button class="btn btn--outline add" data-name="Farmácia e produtos de higiene" data-price="89">Adicionar</button>
+            </div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card__img"><img src="images/produto-paes.webp" alt="Bolos e pães fresquinhos" loading="lazy" /></div>
+          <div class="card__body">
+            <h3>Bolos e pães fresquinhos</h3>
+            <p>Feitos com carinho e disponíveis no dia escolhido por você.</p>
+            <div class="card__foot">
+              <span class="price">R$ 45 <small>/ seleção</small></span>
+              <button class="btn btn--outline add" data-name="Bolos e pães fresquinhos" data-price="45">Adicionar</button>
+            </div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card__img"><img src="images/produto-cestas.webp" alt="Cesta de produtos orgânicos frescos" loading="lazy" /></div>
+          <div class="card__body">
+            <h3>Essenciais para seu dia a dia</h3>
+            <p>Produtos selecionados entre os mais queridos, sempre frescos.</p>
+            <div class="card__foot">
+              <span class="price">R$ 69 <small>/ cesta</small></span>
+              <button class="btn btn--outline add" data-name="Essenciais para seu dia a dia" data-price="69">Adicionar</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SERVIÇOS ================= -->
+  <section class="section" id="servicos">
+    <div class="container">
+      <div class="section-head">
+        <div><p class="eyebrow">Profissionais selecionados</p><h2 class="section-title">Serviços para facilitar sua vida</h2></div>
+        <a class="link-all" href="servicos.html">Ver todos</a>
+      </div>
+      <div class="cards">
+        <article class="card">
+          <div class="card__img"><img src="images/servico-motorista.webp" alt="Motorista particular abrindo a porta do carro" loading="lazy" /></div>
+          <div class="card__body">
+            <h3>Motorista particular</h3>
+            <p>Conforto e segurança para seus compromissos, no seu tempo.</p>
+            <div class="card__foot">
+              <span class="price">Sob consulta</span>
+              <a class="btn btn--outline" href="#contato">Saiba mais</a>
+            </div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card__img"><img src="images/servico-personal.webp" alt="Sessão de personal trainer e fisioterapia" loading="lazy" /></div>
+          <div class="card__body">
+            <h3>Personal trainer / fisioterapeuta</h3>
+            <p>Cuidado com seu corpo, saúde e bem-estar, com acompanhamento próximo.</p>
+            <div class="card__foot">
+              <span class="price">Sob consulta</span>
+              <a class="btn btn--outline" href="#contato">Saiba mais</a>
+            </div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card__img"><img src="images/servico-concierge.webp" alt="Atendimento de concierge personalizado" loading="lazy" /></div>
+          <div class="card__body">
+            <h3>Concierge do dia a dia</h3>
+            <p>Organizamos recados, reservas e tarefas para você aproveitar o que importa.</p>
+            <div class="card__foot">
+              <span class="price">Sob consulta</span>
+              <a class="btn btn--outline" href="#contato">Saiba mais</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= ASSINATURAS ================= -->
+  <section class="section section--cream" id="assinaturas">
+    <div class="container">
+      <div class="section-head">
+        <div><p class="eyebrow">Recorrência com carinho</p><h2 class="section-title">Assinaturas que encantam</h2></div>
+        <a class="link-all" href="#">Ver todas</a>
+      </div>
+      <div class="cards">
+        <article class="card">
+          <div class="card__img"><img src="images/assinatura-cafe.webp" alt="Assinatura de café da tarde com pães e flores" loading="lazy" /></div>
+          <div class="card__body">
+            <h3>Café da tarde</h3>
+            <p>Bolos e pães fresquinhos no dia escolhido, todo mês.</p>
+            <div class="card__foot">
+              <span class="price">R$ 129 <small>/ mês</small></span>
+              <button class="btn btn--gold add" data-name="Assinatura Café da tarde" data-price="129">Assinar</button>
+            </div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card__img"><img src="images/assinatura-flores.webp" alt="Arranjo de flores para a casa" loading="lazy" /></div>
+          <div class="card__body">
+            <h3>Flores em casa</h3>
+            <p>Flores que alegram todos os dias, sempre bem escolhidas.</p>
+            <div class="card__foot">
+              <span class="price">R$ 99 <small>/ mês</small></span>
+              <button class="btn btn--gold add" data-name="Assinatura Flores em casa" data-price="99">Assinar</button>
+            </div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card__img"><img src="images/assinatura-frutas.webp" alt="Cesta de feira fresca com frutas e legumes" loading="lazy" /></div>
+          <div class="card__body">
+            <h3>Feira fresca</h3>
+            <p>Frutas, legumes e verduras selecionadas, direto na sua casa.</p>
+            <div class="card__foot">
+              <span class="price">R$ 119 <small>/ mês</small></span>
+              <button class="btn btn--gold add" data-name="Assinatura Feira fresca" data-price="119">Assinar</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= BLOG & NOTÍCIAS ================= -->
+  <section class="section" id="blog">
+    <div class="container">
+      <div class="section-head">
+        <div><p class="eyebrow">Blog &amp; Notícias</p><h2 class="section-title">Histórias para inspirar o seu dia</h2></div>
+      </div>
+      <div class="cards content-grid">
+
+        <article class="media blog-card">
+          <img src="images/servico-personal.webp" alt="Momento de cuidado com o corpo e o bem-estar" loading="lazy" />
+          <span class="badge-tag">SAÚDE &amp; BEM-ESTAR</span>
+          <div class="media__body">
+            <h3>Pequenos rituais que renovam o bem-estar</h3>
+            <p>Movimento leve, boas noites de sono e conexão: hábitos simples que fazem diferença na sua energia.</p>
+            <button class="media__link article-open" data-article="saude" type="button">Ler artigo <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+          </div>
+        </article>
+
+        <article class="media blog-card">
+          <img src="images/conteudo-santos.webp" alt="Paisagem serena para viagens tranquilas" loading="lazy" />
+          <span class="badge-tag">DESTINOS &amp; GASTRONOMIA</span>
+          <div class="media__body">
+            <h3>Destinos serenos e sabores sem pressa</h3>
+            <p>Roteiros tranquilos pelo Brasil e mesas memoráveis para aproveitar cada momento com calma.</p>
+            <button class="media__link article-open" data-article="destinos" type="button">Ler artigo <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+          </div>
+        </article>
+
+        <article class="media blog-card">
+          <img src="images/conteudo-cinema.webp" alt="Noite tranquila de filmes e séries em casa" loading="lazy" />
+          <span class="badge-tag">FILMES &amp; SÉRIES</span>
+          <div class="media__body">
+            <h3>Séries e filmes para maratonar com calma</h3>
+            <p>De Yellowstone a Landman: histórias envolventes para as suas melhores noites em casa.</p>
+            <button class="media__link article-open" data-article="series" type="button">Ler artigo <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+          </div>
+        </article>
+
+      </div>
+    </div>
+
+    <!-- ===== Conteúdo completo dos artigos (edite os textos aqui) ===== -->
+    <!-- Ficam ocultos e são exibidos na própria página ao clicar em "Ler artigo". -->
+
+    <div class="article-source" id="article-saude" data-cat="Saúde &amp; bem-estar" hidden>
+      <img src="images/servico-personal.webp" alt="Cuidado com o corpo e o bem-estar" />
+      <h2>Pequenos rituais que renovam o bem-estar</h2>
+      <p>Cuidar de si não precisa ser complicado. Muitas vezes, são os gestos simples e repetidos com constância que trazem mais disposição e leveza para o dia a dia. A seguir, reunimos hábitos que cabem em qualquer rotina.</p>
+      <h3>Movimente-se com prazer</h3>
+      <p>Caminhadas tranquilas, alongamentos ao acordar ou uma sessão de fisioterapia orientada mantêm o corpo ativo e as articulações saudáveis. O segredo não é a intensidade, e sim a regularidade — e escolher uma atividade que dê prazer.</p>
+      <h3>Durma bem e hidrate-se</h3>
+      <p>Um sono reparador e a boa hidratação ao longo do dia influenciam o humor, a memória e a energia. Vale criar um ritual de fim de tarde: menos telas, uma luz mais suave e um chá quente para desacelerar.</p>
+      <h3>Alimente-se com cor e variedade</h3>
+      <p>Pratos coloridos, frescos e preparados com carinho nutrem o corpo e também o espírito. Frutas, verduras da estação e boas fontes de proteína ajudam a manter a vitalidade sem abrir mão do sabor.</p>
+      <h3>Cultive vínculos</h3>
+      <p>Conversas, encontros e momentos de convívio são tão importantes quanto qualquer cuidado físico. Manter-se conectado a quem se ama é um dos ingredientes mais poderosos do bem-estar.</p>
+    </div>
+
+    <div class="article-source" id="article-destinos" data-cat="Destinos &amp; gastronomia" hidden>
+      <img src="images/conteudo-santos.webp" alt="Paisagem serena para viagens tranquilas" />
+      <h2>Destinos serenos e sabores sem pressa</h2>
+      <p>Viajar é reencontrar-se com o tempo. Escolher destinos tranquilos, com boa gastronomia e ritmo suave, transforma o passeio em uma experiência de verdade. Aqui vão algumas ideias para se inspirar.</p>
+      <h3>Serra e clima ameno</h3>
+      <p>Campos do Jordão (SP) e Gramado (RS) encantam com ar de montanha, cafés aconchegantes e boa mesa. São destinos perfeitos para caminhadas leves, fondues e tardes sem relógio.</p>
+      <h3>Litoral e brisa do mar</h3>
+      <p>Pertinho de casa, o litoral paulista guarda joias como Santos, com seus jardins à beira-mar, e cidades históricas como Paraty (RJ). Frutos do mar frescos e pôr do sol fazem o resto.</p>
+      <h3>Natureza e sabores do interior</h3>
+      <p>Bonito (MS) e a Chapada Diamantina (BA) recompensam quem gosta de paisagens tranquilas e culinária regional. Uma boa refeição típica ao fim do dia é sempre o melhor souvenir.</p>
+      <p>Dica da Ayra: monte roteiros curtos, com deslocamentos confortáveis, e reserve tempo para simplesmente apreciar. A viagem mais memorável costuma ser a menos apressada.</p>
+    </div>
+
+    <div class="article-source" id="article-series" data-cat="Filmes &amp; séries" hidden>
+      <img src="images/conteudo-cinema.webp" alt="Noite de filmes e séries em casa" />
+      <h2>Séries e filmes para maratonar com calma</h2>
+      <p>Uma boa história é o convite perfeito para uma noite tranquila em casa. Se você gosta de dramas envolventes, com belas paisagens e personagens marcantes, estas sugestões vão render ótimas sessões.</p>
+      <h3>Yellowstone</h3>
+      <p>Criada por Taylor Sheridan e estrelada por Kevin Costner, acompanha a família Dutton e sua imensa fazenda de gado em Montana, entre disputas de terra, poder e lealdade. As paisagens deslumbrantes são quase personagens à parte.</p>
+      <h3>Landman</h3>
+      <p>Do mesmo criador, traz Billy Bob Thornton como Tommy Norris, um "solucionador de problemas" no mundo do petróleo do oeste do Texas. A segunda temporada estreou em novembro de 2025 no Paramount+, com Demi Moore, Andy Garcia e a chegada de Sam Elliott ao elenco.</p>
+      <h3>Para continuar a maratona</h3>
+      <p>Quem gosta desse universo pode explorar também 1883 e 1923, que contam a origem da saga Dutton. Todas combinam drama, história e cenários grandiosos — perfeitas para assistir aos poucos, no seu ritmo.</p>
+      <p>Dica da Ayra: prepare um chá ou um café da tarde especial, ajuste a luz e aproveite. As melhores histórias pedem tempo e conforto.</p>
+    </div>
+  </section>
+
+  <!-- ================= VÍDEO INSTITUCIONAL ================= -->
+  <section class="section section--cream">
+    <div class="container">
+      <div class="videoband">
+        <div class="videoband__text">
+          <p class="eyebrow" style="color:var(--gold)">Nossa essência</p>
+          <h2>Conheça a Ayra por dentro</h2>
+          <p>Nosso propósito e como cuidamos de cada detalhe para oferecer experiências que fazem a diferença.</p>
+          <a class="btn btn--gold" href="#">Assistir ao vídeo</a>
+        </div>
+        <div class="videoband__poster">
+          <img class="leaf" src="images/icon-512.png" alt="" aria-hidden="true" />
+          <button class="play-lg" aria-label="Reproduzir vídeo institucional">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= DEPOIMENTOS ================= -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <div><p class="eyebrow">Histórias reais</p><h2 class="section-title">Quem já vive a experiência Ayra</h2></div>
+      </div>
+      <div class="testi">
+        <div class="testi__card">
+          <div class="testi__quote">&ldquo;</div>
+          <p>A Ayra trouxe mais praticidade e tranquilidade para o meu dia a dia. Tudo é escolhido com muito cuidado e chega sempre perfeito.</p>
+          <div class="testi__who"><img src="images/depoimento-helena.webp" alt="Helena Prado" /><div><strong>Helena Prado</strong><span>Santos, SP</span></div></div>
+        </div>
+        <div class="testi__card">
+          <div class="testi__quote">&ldquo;</div>
+          <p>As assinaturas são excelentes e os conteúdos culturais me ajudam a aproveitar ainda mais os melhores programas da cidade.</p>
+          <div class="testi__who"><img src="images/depoimento-roberto.webp" alt="Roberto Almeida" /><div><strong>Roberto Almeida</strong><span>Santos, SP</span></div></div>
+        </div>
+        <div class="testi__card">
+          <div class="testi__quote">&ldquo;</div>
+          <p>Confio na curadoria da Ayra. Produtos de qualidade, parceiros sérios e um atendimento que realmente nos faz sentir especiais.</p>
+          <div class="testi__who"><img src="images/depoimento-maria.webp" alt="Marisa Oliveira" /><div><strong>Marisa Oliveira</strong><span>São Vicente, SP</span></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= NEWSLETTER / CONTATO ================= -->
+  <section class="section section--cream" id="contato">
+    <div class="container">
+      <div class="cta-band">
+        <div class="cta-box">
+          <h3>Receba novidades e conteúdos exclusivos</h3>
+          <p>Assine nossa newsletter e fique por dentro das melhores dicas, lançamentos e oportunidades.</p>
+          <form class="news-form" onsubmit="return false;">
+            <input type="email" placeholder="Seu melhor e-mail" aria-label="Seu melhor e-mail" required />
+            <button class="btn btn--primary" type="submit">Assinar</button>
+          </form>
+        </div>
+        <div class="cta-box">
+          <h3>Vamos conversar?</h3>
+          <p>Fale com nosso time e tire dúvidas ou sugestões. O cuidado da Ayra está sempre por perto.</p>
+          <p style="margin:0 0 20px;font-weight:600;color:var(--forest)">
+            <a href="tel:+5521999230233" style="color:var(--forest)">(21) 99923-0233</a><br/>
+            <a href="mailto:contato@ayra.app.br" style="color:var(--forest)">contato@ayra.app.br</a>
+          </p>
+          <a class="btn btn--gold" href="https://wa.me/5521999230233" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor" style="width:24px;height:24px"><path d="M12 2a10 10 0 0 0-8.6 15l-1.4 5 5.1-1.3A10 10 0 1 0 12 2zm0 18a8 8 0 0 1-4.1-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8 8 0 1 1 12 20zm4.6-6c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1s-.6.8-.8 1-.3.2-.5.1a6.5 6.5 0 0 1-3.2-2.8c-.2-.4.2-.4.6-1.2.1-.2 0-.3 0-.5s-.6-1.4-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3c-.3.3-1 .9-1 2.3s1 2.7 1.2 2.9c.1.2 2 3 4.8 4.2.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2s-.2-.2-.4-.3z"/></svg>
+            Fale conosco
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <img src="images/logo-ayra.png" alt="Ayra" />
+          <p>SELECIONADO. CONFIÁVEL. PARA VOCÊ.</p>
+          <div class="social">
+            <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 9h3V6h-3c-2 0-3 1-3 3v2H9v3h2v7h3v-7h2.5l.5-3H14v-1.5c0-.6.4-.5 1-.5z"/></svg></a>
+            <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+            <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 8s-.2-1.5-.8-2.1c-.8-.8-1.6-.8-2-.9C16.4 4.7 12 4.7 12 4.7s-4.4 0-7.2.3c-.4.1-1.2.1-2 .9C2.2 6.5 2 8 2 8S1.8 9.7 1.8 11.5v1C1.8 14.3 2 16 2 16s.2 1.5.8 2.1c.8.8 1.8.8 2.3.9 1.7.2 6.9.3 6.9.3s4.4 0 7.2-.3c.4-.1 1.2-.1 2-.9.6-.6.8-2.1.8-2.1s.2-1.7.2-3.5v-1C22.2 9.7 22 8 22 8zM10 15V9l5 3z"/></svg></a>
+            <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 9H3v12h3zM4.5 3a1.8 1.8 0 1 0 0 3.6 1.8 1.8 0 0 0 0-3.6zM21 21h-3v-6c0-1.6-.6-2.5-1.8-2.5-1 0-1.5.7-1.7 1.3-.1.2-.1.6-.1.9V21h-3s.1-11 0-12h3v1.7c.4-.6 1.1-1.5 2.7-1.5 2 0 3.6 1.3 3.6 4.1z"/></svg></a>
+          </div>
+        </div>
+        <div><h4>Navegação</h4><ul><li><a href="produtos.html">Produtos</a></li><li><a href="servicos.html">Serviços</a></li><li><a href="#assinaturas">Assinaturas</a></li><li><a href="#blog">Blog</a></li></ul></div>
+        <div><h4>Institucional</h4><ul><li><a href="#institucional">Sobre a Ayra</a></li><li><a href="#">Como funciona</a></li><li><a href="#">Trabalhe conosco</a></li><li><a href="#">Seja um parceiro</a></li></ul></div>
+        <div><h4>Contato</h4><ul>
+          <li><a href="tel:+5521999230233">(21) 99923-0233</a></li>
+          <li><a href="mailto:contato@ayra.app.br">contato@ayra.app.br</a></li>
+          <li><a href="https://wa.me/5521999230233" target="_blank" rel="noopener">WhatsApp</a></li>
+          <li><a href="#">Central de ajuda</a></li>
+        </ul></div>
+      </div>
+      <div class="footer__bottom">
+        <div class="secure">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+          <span><strong>Site seguro</strong> — Dados protegidos e privacidade garantida.</span>
+        </div>
+        <span>© 2026 Ayra. Todos os direitos reservados.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp flutuante -->
+  <a class="wa-float" href="https://wa.me/5521999230233" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15l-1.4 5 5.1-1.3A10 10 0 1 0 12 2zm4.6 12c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1s-.6.8-.8 1-.3.2-.5.1a6.5 6.5 0 0 1-3.2-2.8c-.2-.4.2-.4.6-1.2.1-.2 0-.3 0-.5s-.6-1.4-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3c-.3.3-1 .9-1 2.3s1 2.7 1.2 2.9c.1.2 2 3 4.8 4.2.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2s-.2-.2-.4-.3z"/></svg>
+  </a>
+
+  <!-- Drawers -->
+  <div class="overlay" id="overlay"></div>
+
+  <aside class="drawer" id="cartDrawer" aria-label="Seu carrinho">
+    <div class="drawer__head"><h3>Seu carrinho</h3><button class="close-btn" data-close aria-label="Fechar">&times;</button></div>
+    <div class="drawer__body" id="cartBody"><p class="empty">Seu carrinho está vazio.</p></div>
+    <div class="drawer__foot">
+      <div class="subtotal"><span>Subtotal</span><span id="cartTotal">R$ 0</span></div>
+      <p class="cart-note">Nesta etapa a seleção é enviada com carinho para nossa equipe. Em breve, o pagamento online estará disponível diretamente aqui.</p>
+      <a class="btn btn--gold btn--block" id="cartWa" href="#" target="_blank" rel="noopener">Enviar seleção pelo WhatsApp</a>
+    </div>
+  </aside>
+
+  <aside class="drawer" id="favDrawer" aria-label="Seus favoritos">
+    <div class="drawer__head"><h3>Seus favoritos</h3><button class="close-btn" data-close aria-label="Fechar">&times;</button></div>
+    <div class="drawer__body" id="favBody"><p class="empty">Salve produtos, serviços e conteúdos para consultar depois.</p></div>
+  </aside>
+
+  <!-- ===== Leitor de artigos (abre na própria página) ===== -->
+  <div class="article-overlay" id="articleOverlay" role="dialog" aria-modal="true" aria-labelledby="artTitle">
+    <div class="article-modal">
+      <button class="article-close" id="articleClose" aria-label="Fechar artigo">&times;</button>
+      <nav class="crumbs" id="artCrumbs" aria-label="Navegação estrutural">
+        <a href="index.html">Início</a> <span aria-hidden="true">›</span>
+        <a href="#blog">Blog</a> <span aria-hidden="true">›</span>
+        <span class="crumbs__current" id="artCat">Artigo</span>
+      </nav>
+      <div class="article-body" id="articleBody"></div>
+      <div class="article-foot">
+        <button class="btn btn--outline" id="articleBack" type="button">← Voltar ao blog</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Menu mobile -->
+  <nav class="mobile-menu" id="mobileMenu" aria-label="Menu">
+    <div class="mobile-menu__head">
+      <img src="images/logo-ayra.png" alt="Ayra" style="height:40px" />
+      <button class="close-btn" id="closeMenu" aria-label="Fechar menu">&times;</button>
+    </div>
+    <a href="produtos.html">Produtos</a>
+    <a href="servicos.html">Serviços</a>
+    <a href="#assinaturas">Assinaturas</a>
+    <a href="#blog">Blog</a>
+    <a href="#contato">Contato</a>
+    <div class="a11y-m" role="group" aria-label="Acessibilidade">
+      <button id="fontMinusM">A− texto</button>
+      <button id="fontPlusM">A+ texto</button>
+      <button id="contrastM">◐ contraste</button>
+    </div>
+  </nav>
+
+  <!-- Dados estruturados (SEO) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      { "@type": "Organization", "name": "Ayra", "url": "https://ayra.app.br", "logo": "https://ayra.app.br/images/logo-ayra.png",
+        "contactPoint": { "@type": "ContactPoint", "telephone": "+55-21-99923-0233", "email": "contato@ayra.app.br", "contactType": "customer service" } },
+      { "@type": "WebSite", "name": "Ayra", "url": "https://ayra.app.br" },
+      { "@type": "BlogPosting", "headline": "Pequenos rituais que renovam o bem-estar", "articleSection": "Saúde & bem-estar", "url": "https://ayra.app.br/#blog", "publisher": { "@type": "Organization", "name": "Ayra" } },
+      { "@type": "BlogPosting", "headline": "Destinos serenos e sabores sem pressa", "articleSection": "Destinos & gastronomia", "url": "https://ayra.app.br/#blog", "publisher": { "@type": "Organization", "name": "Ayra" } },
+      { "@type": "BlogPosting", "headline": "Séries e filmes para maratonar com calma", "articleSection": "Filmes & séries", "url": "https://ayra.app.br/#blog", "publisher": { "@type": "Organization", "name": "Ayra" } }
+    ]
+  }
+  </script>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
